@@ -293,7 +293,7 @@ class SelectedListItem extends React.Component {
       return (
         <div 
           style={{ 
-            fontSize:'160%', 
+            fontSize:'175%', 
             width: '75%',
             maxWidth: '75%',
             backgroundColor: '#2f121a',
@@ -312,7 +312,7 @@ class SelectedListItem extends React.Component {
           <br></br>
           <p>{house.description}</p>
           <div className='sigil-img' style={{opacity:'1.0'}}>
-            <img src={house.img} width="250em"></img>
+            <img src={house.img} width="300em"></img>
           </div>
         </div>
       )
