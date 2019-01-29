@@ -57,7 +57,6 @@ const questions = [
       'PAT HER ON THE BACK — WHAT A QUICK LEARNER!',
       'TAKE THE GUM AND QUIETLY RETURN IT.',
       'MAKE HER APOLOGIZE TO THE STORE MANAGER.',
-      'MAKE HER APOLOGIZE TO THE STORE MANAGER.',
       'SHRUG YOUR SHOULDERS. IT\'S JUST GUM.'
     ]
   },
@@ -151,6 +150,7 @@ const styles = theme => ({
     paddingTop: '1em',
     textAlign: 'center',
     paddingBottom: '1em',
+    borderRadius: '1em'
   },
 });
 
@@ -260,7 +260,8 @@ class SelectedListItem extends React.Component {
                 outline: 'none',
                 width: '15em',
                 height: '2em',
-                marginRight: '0.5em'
+                marginRight: '0.5em',
+                borderRadius: '0.2em'
               }}
               className='prev'
               id='prev-button'
@@ -275,7 +276,8 @@ class SelectedListItem extends React.Component {
                 outline: 'none',
                 height: '2em',
                 width: '15em',
-                marginLeft: '0.5em'
+                marginLeft: '0.5em',
+                borderRadius: '0.2em'
               }}
               className='next'
               id='next-button'
@@ -290,6 +292,7 @@ class SelectedListItem extends React.Component {
       );
     } else {
       let house = this.determineHouse();
+      // let house = houses[10];
       return (
         <div 
           style={{ 
@@ -300,10 +303,11 @@ class SelectedListItem extends React.Component {
             color: 'whitesmoke',
             opacity: '0.9',
             margin: 'auto',
-            marginTop: '10em',
+            marginTop: '8em',
             paddingTop: '1em',
             textAlign: 'center',
             paddingBottom: '1em',
+            borderRadius: '0.5em',
           }} 
           className='results' id='results-div'>
           <h1>
@@ -319,9 +323,6 @@ class SelectedListItem extends React.Component {
     }
   }
 }
-// https://banner2.kisspng.com/20180206/cpe/kisspng-daenerys-targaryen-house-targaryen-robert-baratheo-house-targaryen-png-image-5a7a218ac7ab05.9534259015179534188179.jpg
-
-https://banner2.kisspng.com/20180421/yte/kisspng-daenerys-targaryen-house-targaryen-sigil-decal-sti-showcase-vector-5adb6c4c8e4e64.4123997615243295485829.jpg
 
 SelectedListItem.propTypes = {
   classes: PropTypes.object.isRequired,
