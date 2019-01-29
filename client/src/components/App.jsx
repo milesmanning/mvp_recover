@@ -213,7 +213,6 @@ class SelectedListItem extends React.Component {
       return (
         <div style={{color:'antiquewhite'}} showing={(!this.state.showingResults).toString()} className={classes.root}>
           <h1>Welcome to Westeros</h1>
-          <br></br>
           <h3>May the Seven have mercy on your soul.</h3>
           <List component="nav" className='question-list'>
             <ListItem>
